@@ -76,3 +76,5 @@ document.addEventListener('DOMContentLoaded', () => {sortCategoryItemsAZ('burger
 document.addEventListener('DOMContentLoaded', () => {sortCategoryItemsAZ('salads-items');});
 document.addEventListener('DOMContentLoaded', () => {sortCategoryItemsAZ('hot_drinks-items');});
 document.addEventListener('DOMContentLoaded', () => {sortCategoryItemsAZ('cold_drinks-items');});
+document.addEventListener('DOMContentLoaded', () => {sortCategoryItemsAZ('milkshakes');});
+
