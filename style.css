@@ -223,38 +223,4 @@ h2 {
         width: 100%; /* Each category takes full width on mobile */
     }
 }
-#scrollTopBtn {
-    position: fixed;
-    bottom: 40px;
-    right: 30px;
-    z-index: 999;
-    background-color: #008CFF;
-    color: white;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    border-radius: 50%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s ease, visibility 0.5s ease, transform 0.5s ease;
-}
-
-
-
-#scrollTopBtn.show {
-    border-radius: 8px;
-    width: 30px;
-    height: 100px;
-    max-width: 100px;
-    max-height: 100px;
-    opacity: 1;
-    visibility: visible;
-}
-
-#scrollTopBtn svg {
-
-    display: block;
-    margin: auto;
-}
 
