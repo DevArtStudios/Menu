@@ -40,7 +40,6 @@ setTimeout(function() {
              buttons.forEach(btn => {
                  btn.style.backgroundColor = '#008CFF'; // original blue
                  btn.style.color = 'white';
-                 btn.style.fontWeight = 'normal';
                  btn.style.border = 'none';
              });
  
