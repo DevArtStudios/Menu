@@ -76,20 +76,3 @@ document.addEventListener('DOMContentLoaded', () => {sortCategoryItemsAZ('burger
 document.addEventListener('DOMContentLoaded', () => {sortCategoryItemsAZ('salads-items');});
 document.addEventListener('DOMContentLoaded', () => {sortCategoryItemsAZ('hot_drinks-items');});
 document.addEventListener('DOMContentLoaded', () => {sortCategoryItemsAZ('cold_drinks-items');});
-
-const scrollBtn = document.getElementById("scrollTopBtn");
-
-    window.addEventListener("scroll", () => {
-        if (window.scrollY > 200) {
-            scrollBtn.classList.add("show");
-        } else {
-            scrollBtn.classList.remove("show");
-        }
-    });
-
-    scrollBtn.addEventListener("click", () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
