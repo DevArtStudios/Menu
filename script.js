@@ -47,8 +47,7 @@ setTimeout(function() {
              // Style the selected button
              this.style.backgroundColor = 'white';
              this.style.color = '#008CFF';
-             this.style.fontWeight = 'bold';
-             this.style.border = '2px solid #008CFF'; // blue border
+             this.style.border = '1px solid #008CFF'; // blue border
          });
      });
  });
