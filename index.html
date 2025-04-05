@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="scrollTopBtn" title="Go to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-chevron-up" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"/>
+        </svg>
+      </button>
+        <div class="header">
+            <img src="img/logooo.png" alt="Logo">
+        </div>
+    <div class="loader">
+        <img src="img/logooo.png" alt="Logo">
+    </div>
+    <!-- Category Buttons -->
+    <div class="category-buttons-container">
+
+        <div class="category-buttons">
+            <button onclick="showCategory('appetizers')">Appetizers</button>
+            <button onclick="showCategory('salads')">Salads</button>
+            <button onclick="showCategory('entrees')">Entrees</button>
+            <button onclick="showCategory('pizza')">Pizza</button>
+            <button onclick="showCategory('burger')">Burger</button>
+            <button onclick="showCategory('desserts')">Desserts</button>
+            <button onclick="showCategory('hot_drinks')">Hot Drinks</button>
+            <button onclick="showCategory('cold_drinks')">Cold Drinks</button>
+            <button onclick="showCategory('hookah')">Hookah</button>
+        </div>
+    </div>
+
+    <!-- Menu -->
+    <div class="menu" id="menu-container">
+        <!-- Pizza Category Items (Initially hidden) -->
+<!-- Pizza Category Items -->
+<div class="category pizza-items">
+    <h2>Pizza</h2>
+
+
+    <!-- Margherita Pizza -->
+    <div class="menu-item">
+        <img src="img/margherita_pizza.jpg" alt="Margherita Pizza">
+        <h3>Margherita Pizza</h3>
+        <p class="price">12,000 IQD</p>
+        <p class="description">Classic pizza with tomato, mozzarella, and basil.</p>
+    </div>
+    
+    <!-- Pepperoni Pizza -->
+    <div class="menu-item">
+        <img src="img/pepperoni_pizza.jpg" alt="Pepperoni Pizza">
+        <h3>Pepperoni Pizza</h3>
+        <p class="price">9,500 IQD</p>
+        <p class="description">Classic pizza topped with spicy pepperoni.</p>
+    </div>
+
+    <!-- Supreme Pizza -->
+    <div class="menu-item">
+        <img src="img/supreme_pizza.jpg" alt="Supreme Pizza">
+        <h3>Supreme Pizza</h3>
+        <p class="price">10,500 IQD</p>
+        <p class="description">Loaded with veggies, pepperoni, and sausage for a bold bite.</p>
+    </div>
+
+     <!-- White Sauce Pizza -->
+    <div class="menu-item">
+        <img src="img/white_sauce_pizza.jpg" alt="White Sauce Pizza">
+        <h3>White Sauce Pizza</h3>
+        <p class="price">9,500 IQD</p>
+        <p class="description">Garlic-infused white sauce with melted mozzarella and parmesan.</p>
+    </div>
+
+    <!-- BBQ Chicken Pizza -->
+    <div class="menu-item">
+        <img src="img/bbq_chicken_pizza.jpg" alt="BBQ Chicken Pizza">
+        <h3>BBQ Chicken Pizza</h3>
+        <p class="price">13,000 IQD</p>
+        <p class="description">Grilled chicken with BBQ sauce, onions, and cheese.</p>
+    </div>
+    
+    <!-- Vegetarian Pizza -->
+    <div class="menu-item">
+        <img src="img/vegetarian_pizza.jpg" alt="Vegetarian Pizza">
+        <h3>Vegetarian Pizza</h3>
+        <p class="price">12,000 IQD</p>
+        <p class="description">A mix of vegetables including mushrooms, peppers, and olives.</p>
+    </div>
+    
+    <!-- Hawaiian Pizza -->
+    <div class="menu-item">
+        <img src="img/hawaiian_pizza.jpg" alt="Hawaiian Pizza">
+        <h3>Hawaiian Pizza</h3>
+        <p class="price">12,500 IQD</p>
+        <p class="description">Pineapple, ham, and cheese on a tomato base.</p>
+    </div>
+    
+    <!-- Meat Lovers Pizza -->
+    <div class="menu-item">
+        <img src="img/meat_lovers_pizza.jpg" alt="Meat Lovers Pizza">
+        <h3>Meat Lovers Pizza</h3>
+        <p class="price">13,500 IQD</p>
+        <p class="description">Pepperoni, sausage, bacon, and beef.</p>
+    </div>
+    
+    <!-- Seafood Pizza -->
+    <div class="menu-item">
+        <img src="img/seafood_pizza.jpg" alt="Seafood Pizza">
+        <h3>Seafood Pizza</h3>
+        <p class="price">15,000 IQD</p>
+        <p class="description">Topped with shrimp, crab, and calamari.</p>
+    </div>
+    
+    <!-- Buffalo Chicken Pizza -->
+    <div class="menu-item">
+        <img src="img/buffalo_chicken_pizza.jpg" alt="Buffalo Chicken Pizza">
+        <h3>Buffalo Chicken Pizza</h3>
+        <p class="price">13,000 IQD</p>
+        <p class="description">Spicy buffalo chicken with blue cheese and celery.</p>
+    </div>
+    
+    <!-- Mushroom Pizza -->
+    <div class="menu-item">
+        <img src="img/mushroom_pizza.jpg" alt="Mushroom Pizza">
+        <h3>Mushroom Pizza</h3>
+        <p class="price">12,000 IQD</p>
+        <p class="description">A pizza with fresh mushrooms and garlic.</p>
+    </div>
+</div>
+
+        <!-- Burger Category Items (Initially hidden) -->
+        <div class="category burger-items">
+            <h2>Burgers</h2>
+        
+            <!-- Classic Beef Burger -->
+            <div class="menu-item">
+                <img src="img/classic_beef_burger.jpg" alt="Classic Beef Burger">
+                <h3>Classic Beef Burger</h3>
+                <p class="price">11,050 IQD</p>
+                <p class="description">A juicy beef patty with lettuce, tomato, and cheese.</p>
+            </div>
+            
+            <!-- Chicken Burger -->
+            <div class="menu-item">
+                <img src="img/chicken_burger.jpg" alt="Chicken Burger">
+                <h3>Chicken Burger</h3>
+                <p class="price">10,400 IQD</p>
+                <p class="description">Grilled chicken breast with mayo and pickles.</p>
+            </div>
+            
+            <!-- Cheeseburger -->
+            <div class="menu-item">
+                <img src="img/cheeseburger.jpg" alt="Cheeseburger">
+                <h3>Cheeseburger</h3>
+                <p class="price">11,700 IQD</p>
+                <p class="description">Beef patty topped with melted cheddar cheese.</p>
+            </div>
+            
+            <!-- Bacon Burger -->
+            <div class="menu-item">
+                <img src="img/bacon_burger.jpg" alt="Bacon Burger">
+                <h3>Bacon Burger</h3>
+                <p class="price">12,350 IQD</p>
+                <p class="description">Beef patty with crispy bacon, lettuce, and cheese.</p>
+            </div>
+            
+            <!-- Veggie Burger -->
+            <div class="menu-item">
+                <img src="img/veggie_burger.jpg" alt="Veggie Burger">
+                <h3>Veggie Burger</h3>
+                <p class="price">11,050 IQD</p>
+                <p class="description">A plant-based patty with fresh vegetables.</p>
+            </div>
+            
+            <!-- BBQ Burger -->
+            <div class="menu-item">
+                <img src="img/bbq_burger.jpg" alt="BBQ Burger">
+                <h3>BBQ Burger</h3>
+                <p class="price">13,000 IQD</p>
+                <p class="description">Beef patty topped with BBQ sauce, cheddar cheese, and onions.</p>
+            </div>
+            
+            <!-- Spicy Chicken Burger -->
+            <div class="menu-item">
+                <img src="img/spicy_chicken_burger.jpg" alt="Spicy Chicken Burger">
+                <h3>Spicy Chicken Burger</h3>
+                <p class="price">12,350 IQD</p>
+                <p class="description">Grilled chicken with spicy mayo and jalapeños.</p>
+            </div>
+            
+            <!-- Mushroom Swiss Burger -->
+            <div class="menu-item">
+                <img src="img/mushroom_swiss_burger.jpg" alt="Mushroom Swiss Burger">
+                <h3>Mushroom Swiss Burger</h3>
+                <p class="price">13,000 IQD</p>
+                <p class="description">Beef patty topped with mushrooms and Swiss cheese.</p>
+            </div>
+            
+            <!-- Fish Burger -->
+            <div class="menu-item">
+                <img src="img/fish_burger.jpg" alt="Fish Burger">
+                <h3>Fish Burger</h3>
+                <p class="price">12,350 IQD</p>
+                <p class="description">Crispy fish fillet with tartar sauce and lettuce.</p>
+            </div>
+            
+            <!-- Double Cheeseburger -->
+            <div class="menu-item">
+                <img src="img/double_cheeseburger.jpg" alt="Double Cheeseburger">
+                <h3>Double Cheeseburger</h3>
+                <p class="price">15,600 IQD</p>
+                <p class="description">Two beef patties stacked with cheddar cheese.</p>
+            </div>
+        </div>
+            <!--==========================================================================================-->        
+        <div class="category salads-items">
+            <h2>Salads</h2>
+
+            <!-- Caesar Salad -->
+            <div class="menu-item">
+                <img src="img/caesar_salad.jpg" alt="Caesar Salad">
+                <h3>Caesar Salad</h3>
+                <p class="price">6,000 IQD</p>
+                <p class="description">Crisp romaine lettuce with Caesar dressing and croutons.</p>
+            </div>
+        
+            <!-- Greek Salad -->
+            <div class="menu-item">
+                <img src="img/greek_salad.jpg" alt="Greek Salad">
+                <h3>Greek Salad</h3>
+                <p class="price">6,250 IQD</p>
+                <p class="description">A refreshing mix of cucumbers, tomatoes, feta cheese, and olives.</p>
+            </div>
+        
+            <!-- Caprese Salad -->
+            <div class="menu-item">
+                <img src="img/caprese_salad.jpg" alt="Caprese Salad">
+                <h3>Caprese Salad</h3>
+                <p class="price">6,500 IQD</p>
+                <p class="description">Fresh mozzarella, tomatoes, and basil drizzled with balsamic.</p>
+            </div>
+        
+            <!-- Garden Salad -->
+            <div class="menu-item">
+                <img src="img/garden_salad.jpg" alt="Garden Salad">
+                <h3>Garden Salad</h3>
+                <p class="price">5,000 IQD</p>
+                <p class="description">A mix of fresh lettuce, tomatoes, cucumbers, and carrots.</p>
+            </div>
+        
+            <!-- Tuna Salad -->
+            <div class="menu-item">
+                <img src="img/tuna_avocado_salad.jpg" alt="Tuna Avocado Salad">
+                <h3>Tuna Avocado Salad</h3>
+                <p class="price">6,750 IQD</p>
+                <p class="description">Fresh tuna and creamy avocado tossed with crisp greens and a zesty dressing.</p>
+            </div>
+        
+            <!-- Avocado Salad -->
+            <div class="menu-item">
+                <img src="img/avocado_salad.jpg" alt="Avocado Salad">
+                <h3>Avocado Salad</h3>
+                <p class="price">7,500 IQD</p>
+                <p class="description">A healthy mix of avocados, cherry tomatoes, and greens.</p>
+            </div>
+        
+            <!-- Quinoa Salad -->
+            <div class="menu-item">
+                <img src="img/quinoa_salad.jpg" alt="Quinoa Salad">
+                <h3>Quinoa Salad</h3>
+                <p class="price">7,250 IQD</p>
+                <p class="description">Protein-packed quinoa with fresh vegetables.</p>
+            </div>
+        
+            <!-- Coleslaw -->
+            <div class="menu-item">
+                <img src="img/coleslaw.jpg" alt="Coleslaw">
+                <h3>Coleslaw</h3>
+                <p class="price">4,500 IQD</p>
+                <p class="description">Shredded cabbage with creamy dressing.</p>
+            </div>
+        
+            <!-- Mediterranean Chickpea Salad -->
+            <div class="menu-item">
+                <img src="img/mediterranean_chickpea_salad.jpg" alt="Mediterranean Chickpea Salad">
+                <h3>Mediterranean Chickpea Salad</h3>
+                <p class="price">7,000 IQD</p>
+                <p class="description">Chickpeas, cucumbers, and herbs with lemon dressing.</p>
+            </div>
+        </div>
+            <!--==========================================================================================-->        
+        <div class="category hot_drinks-items">
+            <h2>Hot Drinks</h2>
+        
+            <!-- Espresso -->
+            <div class="menu-item">
+                <img src="img/espresso.jpg" alt="Espresso">
+                <h3>Espresso</h3>
+                <p class="price">3,500 IQD</p>
+                <p class="description">A strong, bold coffee made by forcing hot water through finely-ground coffee beans.</p>
+            </div>
+        
+            <!-- Americano -->
+            <div class="menu-item">
+                <img src="img/americano.jpg" alt="Americano">
+                <h3>Americano</h3>
+                <p class="price">4,000 IQD</p>
+                <p class="description">A simple yet flavorful drink made by diluting espresso with hot water.</p>
+            </div>
+        
+            <!-- Cappuccino -->
+            <div class="menu-item">
+                <img src="img/cappuccino.jpg" alt="Cappuccino">
+                <h3>Cappuccino</h3>
+                <p class="price">4,500 IQD</p>
+                <p class="description">A smooth blend of espresso, steamed milk, and milk foam.</p>
+            </div>
+        
+            <!-- Latte -->
+            <div class="menu-item">
+                <img src="img/latte.jpg" alt="Latte">
+                <h3>Latte</h3>
+                <p class="price">5,000 IQD</p>
+                <p class="description">A smooth, creamy coffee made with espresso and steamed milk.</p>
+            </div>
+        
+            <!-- Flat White -->
+            <div class="menu-item">
+                <img src="img/flat_white.jpg" alt="Flat White">
+                <h3>Flat White</h3>
+                <p class="price">5,000 IQD</p>
+                <p class="description">A rich, velvety coffee made with espresso and steamed milk, with a thin layer of foam.</p>
+            </div>
+        
+            <!-- Mocha -->
+            <div class="menu-item">
+                <img src="img/mocha.jpg" alt="Mocha">
+                <h3>Mocha</h3>
+                <p class="price">5,500 IQD</p>
+                <p class="description">A sweet, chocolate-flavored coffee drink made with espresso, steamed milk, and chocolate syrup.</p>
+            </div>
+        
+            <!-- Macchiato -->
+            <div class="menu-item">
+                <img src="img/macchiato.jpg" alt="Macchiato">
+                <h3>Macchiato</h3>
+                <p class="price">4,000 IQD</p>
+                <p class="description">Espresso topped with a small amount of steamed milk, creating a rich, strong coffee flavor.</p>
+            </div>
+        
+            <!-- Café au Lait -->
+            <div class="menu-item">
+                <img src="img/cafe_au_lait.jpg" alt="Café au Lait">
+                <h3>Café au Lait</h3>
+                <p class="price">4,500 IQD</p>
+                <p class="description">Equal parts brewed coffee and steamed milk, a smooth and flavorful classic.</p>
+            </div>
+        
+            <!-- Irish Coffee -->
+            <div class="menu-item">
+                <img src="img/irish_coffee.jpg" alt="Irish Coffee">
+                <h3>Irish Coffee</h3>
+                <p class="price">6,000 IQD</p>
+                <p class="description">A warming drink made with coffee, Irish whiskey, sugar, and topped with whipped cream.</p>
+            </div>
+        
+            <!-- Turkish Coffee -->
+            <div class="menu-item">
+                <img src="img/turkish_coffee.jpg" alt="Turkish Coffee">
+                <h3>Turkish Coffee</h3>
+                <p class="price">4,500 IQD</p>
+                <p class="description">Strong, rich coffee made with finely ground coffee beans and sugar, brewed over low heat.</p>
+            </div>
+        
+            <!-- Hot Chocolate -->
+            <div class="menu-item">
+                <img src="img/hot_chocolate.jpg" alt="Hot Chocolate">
+                <h3>Hot Chocolate</h3>
+                <p class="price">4,000 IQD</p>
+                <p class="description">A rich and creamy drink made with milk and melted chocolate, topped with whipped cream.</p>
+            </div>
+        
+            <!-- Chai Latte -->
+            <div class="menu-item">
+                <img src="img/chai_latte.jpg" alt="Chai Latte">
+                <h3>Chai Latte</h3>
+                <p class="price">4,500 IQD</p>
+                <p class="description">A spiced tea latte made with black tea, milk, and a blend of spices like cinnamon and ginger.</p>
+            </div>
+        
+            <!-- Matcha Latte -->
+            <div class="menu-item">
+                <img src="img/matcha_latte.jpg" alt="Matcha Latte">
+                <h3>Matcha Latte</h3>
+                <p class="price">5,000 IQD</p>
+                <p class="description">A creamy drink made with powdered green tea and steamed milk, full of antioxidants.</p>
+            </div>
+        
+            <!-- Vanilla Latte -->
+            <div class="menu-item">
+                <img src="img/vanilla_latte.jpg" alt="Vanilla Latte">
+                <h3>Vanilla Latte</h3>
+                <p class="price">5,000 IQD</p>
+                <p class="description">A smooth latte with a touch of sweet vanilla syrup for extra flavor.</p>
+            </div>
+        
+            <!-- Caramel Latte -->
+            <div class="menu-item">
+                <img src="img/caramel_latte.jpg" alt="Caramel Latte">
+                <h3>Caramel Latte</h3>
+                <p class="price">5,500 IQD</p>
+                <p class="description">A creamy latte with a sweet caramel syrup infusion, topped with foam.</p>
+            </div>
+        
+            <!-- Cinnamon Dolce Latte -->
+            <div class="menu-item">
+                <img src="img/cinnamon_dolce_latte.jpg" alt="Cinnamon Dolce Latte">
+                <h3>Cinnamon Dolce Latte</h3>
+                <p class="price">5,500 IQD</p>
+                <p class="description">A sweet and spicy latte made with cinnamon syrup and topped with whipped cream.</p>
+            </div>
+        
+            <!-- Gingerbread Latte -->
+            <div class="menu-item">
+                <img src="img/gingerbread_latte.jpg" alt="Gingerbread Latte">
+                <h3>Gingerbread Latte</h3>
+                <p class="price">5,500 IQD</p>
+                <p class="description">A seasonal latte made with gingerbread syrup and topped with whipped cream.</p>
+            </div>
+        
+            <!-- Peppermint Mocha -->
+            <div class="menu-item">
+                <img src="img/peppermint_mocha.jpg" alt="Peppermint Mocha">
+                <h3>Peppermint Mocha</h3>
+                <p class="price">6,000 IQD</p>
+                <p class="description">A festive drink made with espresso, steamed milk, chocolate, and a hint of peppermint.</p>
+            </div>
+        
+            <!-- Honey Latte -->
+            <div class="menu-item">
+                <img src="img/honey_latte.jpg" alt="Honey Latte">
+                <h3>Honey Latte</h3>
+                <p class="price">5,000 IQD</p>
+                <p class="description">A comforting latte made with honey and steamed milk for a sweet, natural flavor.</p>
+            </div>
+        
+            <!-- Spiced Hot Chocolate -->
+            <div class="menu-item">
+                <img src="img/spiced_hot_chocolate.jpg" alt="Spiced Hot Chocolate">
+                <h3>Spiced Hot Chocolate</h3>
+                <p class="price">4,500 IQD</p>
+                <p class="description">A twist on traditional hot chocolate with the addition of cinnamon and nutmeg for a warm spice.</p>
+            </div>
+        
+            <!-- Café Cortado -->
+            <div class="menu-item">
+                <img src="img/cafe_cortado.jpg" alt="Café Cortado">
+                <h3>Café Cortado</h3>
+                <p class="price">4,000 IQD</p>
+                <p class="description">A strong coffee with equal parts espresso and steamed milk, for a balanced flavor.</p>
+            </div>
+        
+            <!-- Steamer -->
+            <div class="menu-item">
+                <img src="img/steamer.jpg" alt="Steamer">
+                <h3>Steamer</h3>
+                <p class="price">4,000 IQD</p>
+                <p class="description">A simple, steamed milk drink flavored with your choice of syrup such as vanilla or caramel.</p>
+            </div>
+        
+            <!-- London Fog -->
+            <div class="menu-item">
+                <img src="img/london_fog.jpg" alt="London Fog">
+                <h3>London Fog</h3>
+                <p class="price">5,000 IQD</p>
+                <p class="description">A smooth and fragrant tea latte made with Earl Grey tea, milk, and vanilla syrup.</p>
+            </div>
+        
+            <!-- Golden Milk Latte -->
+            <div class="menu-item">
+                <img src="img/golden_milk_latte.jpg" alt="Golden Milk Latte">
+                <h3>Golden Milk Latte</h3>
+                <p class="price">5,500 IQD</p>
+                <p class="description">A warm, spiced drink made with turmeric, milk, and a touch of honey or maple syrup.</p>
+            </div>
+        
+            <!-- Tea Latte -->
+            <div class="menu-item">
+                <img src="img/tea_latte.jpg" alt="Tea Latte">
+                <h3>Tea Latte</h3>
+                <p class="price">4,500 IQD</p>
+                <p class="description">A comforting drink made with brewed tea and steamed milk, available in various flavors.</p>
+            </div>
+        
+            <!-- Lavender Latte -->
+            <div class="menu-item">
+                <img src="img/lavender_latte.jpg" alt="Lavender Latte">
+                <h3>Lavender Latte</h3>
+                <p class="price">5,000 IQD</p>
+                <p class="description">A calming latte made with lavender syrup, espresso, and steamed milk.</p>
+            </div>
+        
+            <!-- Brewed Coffee -->
+            <div class="menu-item">
+                <img src="img/brewed_coffee.jpg" alt="Brewed Coffee">
+                <h3>Brewed Coffee</h3>
+                <p class="price">3,000 IQD</p>
+                <p class="description">Freshly brewed coffee made from high-quality beans, served black or with milk/cream.</p>
+            </div>
+        
+            <!-- Affogato -->
+            <div class="menu-item">
+                <img src="img/affogato.jpg" alt="Affogato">
+                <h3>Affogato</h3>
+                <p class="price">6,000 IQD</p>
+                <p class="description">A delicious combination of espresso poured over a scoop of vanilla ice cream.</p>
+            </div>
+        
+            <!-- Iraqi Tea -->
+            <div class="menu-item">
+                <img src="img/iraqi_tea.jpg" alt="Iraqi Tea">
+                <h3>Iraqi Tea</h3>
+                <p class="price">1,500 IQD</p>
+                <p class="description">Traditional and aromatic Iraqi tea, served hot for a comforting experience.</p>
+            </div>
+        
+            <!-- Turmeric Latte -->
+            <div class="menu-item">
+                <img src="img/turmeric_latte.jpg" alt="Turmeric Latte">
+                <h3>Turmeric Latte</h3>
+                <p class="price">5,500 IQD</p>
+                <p class="description">A spiced latte made with turmeric, ginger, and milk for a healthful, warming drink.</p>
+            </div>
+        </div>
+    <!--==========================================================================================-->        
+        <div class="category cold_drinks-items">
+            <h2>Cold Drinks</h2>
+        
+            <!-- Bottled Water -->
+            <div class="menu-item">
+                <img src="img/bottled_water.jpg" alt="Bottled Water">
+                <h3>Bottled Water</h3>
+                <p class="price">1,000 IQD</p>
+                <p class="description">A refreshing bottle of chilled natural water to quench your thirst.</p>
+            </div>
+        
+            <!-- Sparkling Water -->
+            <div class="menu-item">
+                <img src="img/sparkling_water.jpg" alt="Sparkling Water">
+                <h3>Sparkling Water</h3>
+                <p class="price">1,500 IQD</p>
+                <p class="description">A refreshing sparkling water to add a little fizz to your day.</p>
+            </div>
+        
+            <!-- Coca-Cola -->
+            <div class="menu-item">
+                <img src="img/coca_cola.jpg" alt="Coca-Cola">
+                <h3>Coca-Cola</h3>
+                <p class="price">2,500 IQD</p>
+                <p class="description">The classic carbonated cola drink with a sweet, refreshing taste.</p>
+            </div>
+        
+            <!-- Diet Coca-Cola -->
+            <div class="menu-item">
+                <img src="img/diet_coca_cola.jpg" alt="Diet Coca-Cola">
+                <h3>Diet Coca-Cola</h3>
+                <p class="price">2,500 IQD</p>
+                <p class="description">The sugar-free version of the classic Coca-Cola, for those watching their calorie intake.</p>
+            </div>
+        
+            <!-- Pepsi -->
+            <div class="menu-item">
+                <img src="img/pepsi.jpg" alt="Pepsi">
+                <h3>Pepsi</h3>
+                <p class="price">2,500 IQD</p>
+                <p class="description">A sweet and refreshing carbonated cola drink.</p>
+            </div>
+        
+            <!-- Diet Pepsi -->
+            <div class="menu-item">
+                <img src="img/diet_pepsi.jpg" alt="Diet Pepsi">
+                <h3>Diet Pepsi</h3>
+                <p class="price">2,500 IQD</p>
+                <p class="description">The sugar-free version of Pepsi, providing a refreshing taste without the calories.</p>
+            </div>
+        
+            <!-- 7UP -->
+            <div class="menu-item">
+                <img src="img/7up.jpg" alt="7UP">
+                <h3>7UP</h3>
+                <p class="price">2,500 IQD</p>
+                <p class="description">A lemon-lime soda with a crisp, refreshing taste.</p>
+            </div>
+        
+            <!-- Mirinda -->
+            <div class="menu-item">
+                <img src="img/mirinda.jpg" alt="Mirinda">
+                <h3>Mirinda</h3>
+                <p class="price">2,500 IQD</p>
+                <p class="description">A fruity carbonated drink with a tangy citrus flavor.</p>
+            </div>
+        
+            <!-- Sprite -->
+            <div class="menu-item">
+                <img src="img/sprite.jpg" alt="Sprite">
+                <h3>Sprite</h3>
+                <p class="price">2,500 IQD</p>
+                <p class="description">A cool, lemon-lime soda that is crisp and refreshing.</p>
+            </div>
+        
+            <!-- Fanta Orange -->
+            <div class="menu-item">
+                <img src="img/fanta_orange.jpg" alt="Fanta Orange">
+                <h3>Fanta Orange</h3>
+                <p class="price">2,500 IQD</p>
+                <p class="description">A sweet, citrus-flavored soda with a bold orange taste.</p>
+            </div>
+        
+            <!-- Fanta Strawberry -->
+            <div class="menu-item">
+                <img src="img/fanta_strawberry.jpg" alt="Fanta Strawberry">
+                <h3>Fanta Strawberry</h3>
+                <p class="price">2,500 IQD</p>
+                <p class="description">A sweet and fruity soda with a rich strawberry flavor.</p>
+            </div>
+        
+            <!-- Milkshake - Chocolate -->
+            <div class="menu-item">
+                <img src="img/chocolate_milkshake.jpg" alt="Milkshake - Chocolate">
+                <h3>Milkshake - Chocolate</h3>
+                <p class="price">5,000 IQD</p>
+                <p class="description">A rich and creamy chocolate milkshake made with milk, chocolate syrup, and ice cream.</p>
+            </div>
+        
+            <!-- Milkshake - Vanilla -->
+            <div class="menu-item">
+                <img src="img/vanilla_milkshake.jpg" alt="Milkshake - Vanilla">
+                <h3>Milkshake - Vanilla</h3>
+                <p class="price">5,000 IQD</p>
+                <p class="description">A creamy and smooth vanilla milkshake made with vanilla ice cream and milk.</p>
+            </div>
+        
+            <!-- Milkshake - Strawberry -->
+            <div class="menu-item">
+                <img src="img/strawberry_milkshake.jpg" alt="Milkshake - Strawberry">
+                <h3>Milkshake - Strawberry</h3>
+                <p class="price">5,000 IQD</p>
+                <p class="description">A sweet strawberry milkshake made with fresh strawberries, ice cream, and milk.</p>
+            </div>
+        
+            <!-- Milkshake - Banana -->
+            <div class="menu-item">
+                <img src="img/banana_milkshake.jpg" alt="Milkshake - Banana">
+                <h3>Milkshake - Banana</h3>
+                <p class="price">5,000 IQD</p>
+                <p class="description">A creamy banana milkshake made with ripe bananas, milk, and vanilla ice cream.</p>
+            </div>
+        
+            <!-- Milkshake - Mango -->
+            <div class="menu-item">
+                <img src="img/mango_milkshake.jpg" alt="Milkshake - Mango">
+                <h3>Milkshake - Mango</h3>
+                <p class="price">5,000 IQD</p>
+                <p class="description">A tropical mango milkshake made with fresh mangoes, milk, and ice cream.</p>
+            </div>
+        
+            <!-- Milkshake - Coffee -->
+            <div class="menu-item">
+                <img src="img/coffee_milkshake.jpg" alt="Milkshake - Coffee">
+                <h3>Milkshake - Coffee</h3>
+                <p class="price">5,000 IQD</p>
+                <p class="description">A delicious coffee-flavored milkshake made with coffee, milk, and ice cream.</p>
+            </div>
+        
+            <!-- Milkshake - Caramel -->
+            <div class="menu-item">
+                <img src="img/caramel_milkshake.jpg" alt="Milkshake - Caramel">
+                <h3>Milkshake - Caramel</h3>
+                <p class="price">5,000 IQD</p>
+                <p class="description">A sweet and creamy caramel milkshake made with caramel syrup, ice cream, and milk.</p>
+            </div>
+        
+            <!-- Chocolate Mint Milkshake -->
+            <div class="menu-item">
+                <img src="img/chocolate_mint_milkshake.jpg" alt="Chocolate Mint Milkshake">
+                <h3>Chocolate Mint Milkshake</h3>
+                <p class="price">5,000 IQD</p>
+                <p class="description">A cool and refreshing mint chocolate milkshake made with mint and chocolate ice cream.</p>
+            </div>
+        
+            <!-- Peach Milkshake -->
+            <div class="menu-item">
+                <img src="img/peach_milkshake.jpg" alt="Peach Milkshake">
+                <h3>Peach Milkshake</h3>
+                <p class="price">5,000 IQD</p>
+                <p class="description">A creamy milkshake made with fresh peaches, vanilla ice cream, and milk.</p>
+            </div>
+        
+            <!-- Oreo Milkshake -->
+            <div class="menu-item">
+                <img src="img/oreo_milkshake.jpg" alt="Oreo Milkshake">
+                <h3>Oreo Milkshake</h3>
+                <p class="price">5,500 IQD</p>
+                <p class="description">A creamy milkshake made with crushed Oreo cookies, vanilla ice cream, and milk.</p>
+            </div>
+        
+            <!-- Nutella Milkshake -->
+            <div class="menu-item">
+                <img src="img/nutella_milkshake.jpg" alt="Nutella Milkshake">
+                <h3>Nutella Milkshake</h3>
+                <p class="price">5,500 IQD</p>
+                <p class="description">A rich milkshake made with Nutella, milk, and ice cream for a chocolaty, nutty flavor.</p>
+            </div>
+        
+            <!-- Cookie Dough Milkshake -->
+            <div class="menu-item">
+                <img src="img/cookie_dough_milkshake.jpg" alt="Cookie Dough Milkshake">
+                <h3>Cookie Dough Milkshake</h3>
+                <p class="price">5,500 IQD</p>
+                <p class="description">A delicious milkshake made with cookie dough, milk, and ice cream, perfect for dessert lovers.</p>
+            </div>
+        </div>
+        
+        <div class="category hookah-items">
+            <h2>Hookah</h2>
+        
+            <!-- Grape Flavor -->
+            <div class="menu-item">
+                <img src="img/hookah_grape.jpg" alt="Grape Flavor">
+                <h3>Grape Flavor</h3>
+                <p class="price">12,000 IQD</p>
+                <p class="description">A rich and smooth Grape flavor, perfect for relaxation.</p>
+            </div>
+        
+            <!-- Mint Flavor -->
+            <div class="menu-item">
+                <img src="img/hookah_mint.jpg" alt="Mint Flavor">
+                <h3>Mint Flavor</h3>
+                <p class="price">12,000 IQD</p>
+                <p class="description">Refreshing and cool Mint flavor, ideal for a fresh experience.</p>
+            </div>
+        
+            <!-- Apple Flavor -->
+            <div class="menu-item">
+                <img src="img/hookah_apple.jpg" alt="Apple Flavor">
+                <h3>Apple Flavor</h3>
+                <p class="price">12,000 IQD</p>
+                <p class="description">Classic Apple flavor, a favorite among many Hookah enthusiasts.</p>
+            </div>
+        
+            <!-- Watermelon Flavor -->
+            <div class="menu-item">
+                <img src="img/hookah_watermelon.jpg" alt="Watermelon Flavor">
+                <h3>Watermelon Flavor</h3>
+                <p class="price">12,000 IQD</p>
+                <p class="description">Juicy and sweet Watermelon flavor for a summer vibe.</p>
+            </div>
+        
+            <!-- Peach Flavor -->
+            <div class="menu-item">
+                <img src="img/hookah_peach.jpg" alt="Peach Flavor">
+                <h3>Peach Flavor</h3>
+                <p class="price">12,000 IQD</p>
+                <p class="description">Smooth Peach flavor with a fruity and sweet aroma.</p>
+            </div>
+        
+            <!-- Strawberry Flavor -->
+            <div class="menu-item">
+                <img src="img/hookah_strawberry.jpg" alt="Strawberry Flavor">
+                <h3>Strawberry Flavor</h3>
+                <p class="price">12,000 IQD</p>
+                <p class="description">A delicious and sweet Strawberry flavor, perfect for fruity lovers.</p>
+            </div>
+        
+            <!-- Lemon Mint Flavor -->
+            <div class="menu-item">
+                <img src="img/hookah_lemon_mint.jpg" alt="Lemon Mint Flavor">
+                <h3>Lemon Mint Flavor</h3>
+                <p class="price">12,000 IQD</p>
+                <p class="description">A tangy Lemon combined with a refreshing Mint for a cool taste.</p>
+            </div>
+        
+            <!-- Blueberry Flavor -->
+            <div class="menu-item">
+                <img src="img/hookah_blueberry.jpg" alt="Blueberry Flavor">
+                <h3>Blueberry Flavor</h3>
+                <p class="price">12,000 IQD</p>
+                <p class="description">Fruity and sweet Blueberry flavor for a unique experience.</p>
+            </div>
+        
+            <!-- Pomegranate Flavor -->
+            <div class="menu-item">
+                <img src="img/hookah_pomegranate.jpg" alt="Pomegranate Flavor">
+                <h3>Pomegranate Flavor</h3>
+                <p class="price">12,500 IQD</p>
+                <p class="description">Rich and exotic Pomegranate flavor for a premium Hookah experience.</p>
+            </div>
+        
+            <!-- Melon Flavor -->
+            <div class="menu-item">
+                <img src="img/hookah_melon.jpg" alt="Melon Flavor">
+                <h3>Melon Flavor</h3>
+                <p class="price">12,000 IQD</p>
+                <p class="description">A refreshing Melon flavor that’s both sweet and light.</p>
+            </div>
+        
+            <!-- Coconut Flavor -->
+            <div class="menu-item">
+                <img src="img/hookah_coconut.jpg" alt="Coconut Flavor">
+                <h3>Coconut Flavor</h3>
+                <p class="price">12,000 IQD</p>
+                <p class="description">Tropical Coconut flavor for a relaxed island experience.</p>
+            </div>
+        
+            <!-- Double Apple Flavor -->
+            <div class="menu-item">
+                <img src="img/hookah_double_apple.jpg" alt="Double Apple Flavor">
+                <h3>Double Apple Flavor</h3>
+                <p class="price">12,000 IQD</p>
+                <p class="description">A classic, sweet and tangy Double Apple flavor, very popular.</p>
+            </div>
+        
+            <!-- Gum Mint Flavor -->
+            <div class="menu-item">
+                <img src="img/hookah_gum_mint.jpg" alt="Gum Mint Flavor">
+                <h3>Gum Mint Flavor</h3>
+                <p class="price">12,000 IQD</p>
+                <p class="description">A sweet gum combined with mint for a fresh and unique experience.</p>
+            </div>
+        </div>
+
+        <div class="category appetizers-items">
+            <h2>Appetizers</h2>
+        
+            <!-- Mozzarella Sticks -->
+            <div class="menu-item">
+                <img src="img/mozzarella_Sticks.jpg" alt="Mozzarella Sticks">
+                <h3>Mozzarella Sticks</h3>
+                <p class="price">6,000 IQD</p>
+                <p class="description">Crispy fried mozzarella cheese served with marinara sauce.</p>
+            </div>
+        
+            <!-- Buffalo Wings -->
+            <div class="menu-item">
+                <img src="img/buffalo_wings.jpg" alt="Buffalo Wings">
+                <h3>Buffalo Wings</h3>
+                <p class="price">7,500 IQD</p>
+                <p class="description">Spicy chicken wings tossed in buffalo sauce.</p>
+            </div>
+        
+            <!-- Garlic Bread -->
+            <div class="menu-item">
+                <img src="img/garlic_bread.jpg" alt="Garlic Bread">
+                <h3>Garlic Bread</h3>
+                <p class="price">4,000 IQD</p>
+                <p class="description">Toasted bread with garlic butter and herbs.</p>
+            </div>
+        
+            <!-- Onion Rings -->
+            <div class="menu-item">
+                <img src="img/onion_rings.jpg" alt="Onion Rings">
+                <h3>Onion Rings</h3>
+                <p class="price">3,500 IQD</p>
+                <p class="description">Crispy battered onion rings served with a tangy dipping sauce.</p>
+            </div>
+        
+            <!-- Stuffed Mushrooms -->
+            <div class="menu-item">
+                <img src="img/stuffed_mushrooms.jpg" alt="Stuffed Mushrooms">
+                <h3>Stuffed Mushrooms</h3>
+                <p class="price">6,500 IQD</p>
+                <p class="description">Mushrooms stuffed with cheese and herbs.</p>
+            </div>
+        
+            <!-- Spring Rolls -->
+            <div class="menu-item">
+                <img src="img/spring_rolls.jpg" alt="Spring Rolls">
+                <h3>Spring Rolls</h3>
+                <p class="price">5,750 IQD</p>
+                <p class="description">Crispy vegetable spring rolls served with sweet chili sauce.</p>
+            </div>
+        
+            <!-- Hummus with Pita -->
+            <div class="menu-item">
+                <img src="img/hummus_pita.jpg" alt="Hummus with Pita">
+                <h3>Hummus with Pita</h3>
+                <p class="price">5,000 IQD</p>
+                <p class="description">Creamy hummus served with warm pita bread.</p>
+            </div>
+        
+            <!-- Bruschetta -->
+            <div class="menu-item">
+                <img src="img/bruschettas.jpg" alt="Bruschetta">
+                <h3>Bruschetta</h3>
+                <p class="price">5,250 IQD</p>
+                <p class="description">Grilled bread topped with fresh tomatoes and basil.</p>
+            </div>
+        
+            <!-- Cheesy Nachos -->
+            <div class="menu-item">
+                <img src="img/cheesy_nachos.jpg" alt="Cheesy Nachos">
+                <h3>Cheesy Nachos</h3>
+                <p class="price">7,000 IQD</p>
+                <p class="description">Crunchy nachos topped with melted cheese and jalapenos.</p>
+            </div>
+        
+            <!-- Meatballs -->
+            <div class="menu-item">
+                <img src="img/meatballs.jpg" alt="Meatballs">
+                <h3>Meatballs</h3>
+                <p class="price">7,250 IQD</p>
+                <p class="description">Tender meatballs in marinara sauce.</p>
+            </div>
+        </div>
+        <div class="category desserts-items">
+            <h2>Desserts</h2>
+        
+            <!-- Chocolate Lava Cake -->
+            <div class="menu-item">
+                <img src="img/chocolate_lava_cake.jpg" alt="Chocolate Lava Cake">
+                <h3>Chocolate Lava Cake</h3>
+                <p class="price">7,000 IQD</p>
+                <p class="description">Warm chocolate cake with a gooey center.</p>
+            </div>
+        
+            <!-- Cheesecake -->
+            <div class="menu-item">
+                <img src="img/cheesecake.jpg" alt="Cheesecake">
+                <h3>Cheesecake</h3>
+                <p class="price">7,500 IQD</p>
+                <p class="description">Classic New York-style cheesecake.</p>
+            </div>
+        
+            <!-- Tiramisu -->
+            <div class="menu-item">
+                <img src="img/tiramisu.jpg" alt="Tiramisu">
+                <h3>Tiramisu</h3>
+                <p class="price">8,000 IQD</p>
+                <p class="description">Classic Italian dessert with coffee-soaked ladyfingers.</p>
+            </div>
+        
+            <!-- Apple Pie -->
+            <div class="menu-item">
+                <img src="img/apple_pie.jpg" alt="Apple Pie">
+                <h3>Apple Pie</h3>
+                <p class="price">6,000 IQD</p>
+                <p class="description">Homemade apple pie with cinnamon flavor.</p>
+            </div>
+        
+            <!-- Brownies -->
+            <div class="menu-item">
+                <img src="img/brownies.jpg" alt="Brownies">
+                <h3>Brownies</h3>
+                <p class="price">5,000 IQD</p>
+                <p class="description">Rich and fudgy chocolate brownies.</p>
+            </div>
+        
+            <!-- Baklava -->
+            <div class="menu-item">
+                <img src="img/baklava.jpg" alt="Baklava">
+                <h3>Baklava</h3>
+                <p class="price">7,250 IQD</p>
+                <p class="description">Crispy phyllo pastry filled with nuts and honey.</p>
+            </div>
+        
+            <!-- Fruit Tart -->
+            <div class="menu-item">
+                <img src="img/fruit_tart.jpg" alt="Fruit Tart">
+                <h3>Fruit Tart</h3>
+                <p class="price">8,000 IQD</p>
+                <p class="description">Fresh fruit tart with a creamy custard base.</p>
+            </div>
+        
+            <!-- Ice Cream Sundae -->
+            <div class="menu-item">
+                <img src="img/ice_cream_sundae.jpg" alt="Ice Cream Sundae">
+                <h3>Ice Cream Sundae</h3>
+                <p class="price">5,500 IQD</p>
+                <p class="description">Vanilla ice cream topped with chocolate syrup and nuts.</p>
+            </div>
+        
+            <!-- Chocolate Mousse -->
+            <div class="menu-item">
+                <img src="img/chocolate_mousse.jpg" alt="Chocolate Mousse">
+                <h3>Chocolate Mousse</h3>
+                <p class="price">7,000 IQD</p>
+                <p class="description">Light and airy chocolate mousse.</p>
+            </div>
+        
+            <!-- Panna Cotta -->
+            <div class="menu-item">
+                <img src="img/panna_cotta.jpg" alt="Panna Cotta">
+                <h3>Panna Cotta</h3>
+                <p class="price">6,500 IQD</p>
+                <p class="description">Creamy Italian dessert with berry sauce.</p>
+            </div>
+        </div>
+        
+        <div class="category entrees-items">
+            <h2>Entrees</h2>
+        
+            <!-- Grilled Chicken Breast -->
+            <div class="menu-item">
+                <img src="img/grilled_chicken_breast.jpg" alt="Grilled Chicken Breast">
+                <h3>Grilled Chicken Breast</h3>
+                <p class="price">15,000 IQD</p>
+                <p class="description">Juicy grilled chicken breast served with steamed vegetables and mashed potatoes.</p>
+            </div>
+        
+            <!-- Beef Steak -->
+            <div class="menu-item">
+                <img src="img/beef_steak.jpg" alt="Beef Steak">
+                <h3>Beef Steak</h3>
+                <p class="price">20,000 IQD</p>
+                <p class="description">Tender beef steak cooked to your liking, served with garlic butter and a side of fries.</p>
+            </div>
+        
+            <!-- Lamb Chops -->
+            <div class="menu-item">
+                <img src="img/lamb_chops.jpg" alt="Lamb Chops">
+                <h3>Lamb Chops</h3>
+                <p class="price">22,000 IQD</p>
+                <p class="description">Succulent lamb chops grilled to perfection with rosemary and garlic, served with couscous.</p>
+            </div>
+        
+            <!-- Salmon Fillet -->
+            <div class="menu-item">
+                <img src="img/salmon_fillet.jpg" alt="Salmon Fillet">
+                <h3>Salmon Fillet</h3>
+                <p class="price">18,000 IQD</p>
+                <p class="description">Grilled salmon fillet with a lemon butter sauce, served with asparagus and wild rice.</p>
+            </div>
+        
+            <!-- Chicken Parmesan -->
+            <div class="menu-item">
+                <img src="img/chicken_parmesan.jpg" alt="Chicken Parmesan">
+                <h3>Chicken Parmesan</h3>
+                <p class="price">17,000 IQD</p>
+                <p class="description">Breaded chicken topped with marinara sauce and melted mozzarella cheese, served with spaghetti.</p>
+            </div>
+        
+            <!-- Shrimp Scampi -->
+            <div class="menu-item">
+                <img src="img/shrimp_scampi.jpg" alt="Shrimp Scampi">
+                <h3>Shrimp Scampi</h3>
+                <p class="price">16,000 IQD</p>
+                <p class="description">Shrimp cooked in garlic butter sauce, served over pasta with a sprinkle of parmesan.</p>
+            </div>
+        
+            <!-- Pork Tenderloin -->
+            <div class="menu-item">
+                <img src="img/pork_tenderloin.jpg" alt="Pork Tenderloin">
+                <h3>Pork Tenderloin</h3>
+                <p class="price">19,000 IQD</p>
+                <p class="description">Tender pork tenderloin with apple glaze, served with roasted potatoes and sautéed spinach.</p>
+            </div>
+        
+            <!-- Chicken Alfredo -->
+            <div class="menu-item">
+                <img src="img/chicken_alfredo.jpg" alt="Chicken Alfredo">
+                <h3>Chicken Alfredo</h3>
+                <p class="price">16,000 IQD</p>
+                <p class="description">Creamy Alfredo sauce over grilled chicken and fettuccine pasta.</p>
+            </div>
+        
+            <!-- Beef Wellington -->
+            <div class="menu-item">
+                <img src="img/beef_wellington.jpg" alt="Beef Wellington">
+                <h3>Beef Wellington</h3>
+                <p class="price">25,000 IQD</p>
+                <p class="description">Beef tenderloin wrapped in puff pastry with mushrooms, served with mashed potatoes and gravy.</p>
+            </div>
+        
+            <!-- Vegetable Stir Fry -->
+            <div class="menu-item">
+                <img src="img/vegetable_stir_fry.jpg" alt="Vegetable Stir Fry">
+                <h3>Vegetable Stir Fry</h3>
+                <p class="price">12,000 IQD</p>
+                <p class="description">A mix of fresh vegetables stir-fried in soy sauce, served with jasmine rice.</p>
+            </div>
+            
+        </div>
+
+
+
+
+        <div class="footer">
+            Powered by <a href="#" target="_blank">DevArt Studios</a>
+        </div>
+        
+        
+        
+  
+        <script src="script.js"></script>
+
+</body>
+</html>
